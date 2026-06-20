@@ -20,8 +20,13 @@ jobs:
           java-version: '17'
           cache: 'gradle'
 
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v3
+      - name: Create gradle wrapper directory
+        run: mkdir -p gradle/wrapper
+
+      - name: Download gradle-wrapper.jar
+        run: |
+          wget -O gradle/wrapper/gradle-wrapper.jar https://repo.gradle.org/gradle/distributions/gradle-8.7-wrapper.jar || \
+          curl -L -o gradle/wrapper/gradle-wrapper.jar https://repo.gradle.org/gradle/distributions/gradle-8.7-wrapper.jar
 
       - name: Make gradlew executable
         run: chmod +x ./gradlew
