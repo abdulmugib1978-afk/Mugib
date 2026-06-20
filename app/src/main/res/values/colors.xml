@@ -1,1 +1,6 @@
-
+<resources>
+    <color name="purple_700">#6A1B9A</color>
+    <color name="purple_500">#9C27B0</color>
+    <color name="gray_600">#757575</color>
+    <color name="red_500">#E53935</color>
+</resources>
