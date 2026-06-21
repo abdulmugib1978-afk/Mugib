@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Prayer Tracker</h1>
+
+    <div class="card">
+        <h2>Today's Prayers</h2>
+
+        <label class="prayer">
+            <input type="checkbox" id="fajr">
+            <span>Fajr</span>
+        </label>
+
+        <label class="prayer">
+            <input type="checkbox" id="dhuhr">
+            <span>Dhuhr</span>
+        </label>
+
+        <label class="prayer">
+            <input type="checkbox" id="asr">
+            <span>Asr</span>
+        </label>
+
+        <label class="prayer">
+            <input type="checkbox" id="maghrib">
+            <span>Maghrib</span>
+        </label>
+
+        <label class="prayer">
+            <input type="checkbox" id="isha">
+            <span>Isha</span>
+        </label>
+
+        <div class="summary">
+            Completed:
+            <span id="count">0</span>/5
+        </div>
+
+        <button onclick="savePrayer()">
+            Save
+        </button>
+    </div>
+
+    <div class="card">
+        <h2>Current Streak</h2>
+        <div id="streak">0 Days 🔥</div>
+    </div>
+
+    <div class="card">
+        <h2>Last 30 Days</h2>
+
+        <canvas
+            id="chart"
+            width="320"
+            height="180">
+        </canvas>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
