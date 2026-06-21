@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f5f5f5;
+    font-family:Arial,sans-serif;
+    padding:16px;
+}
+
+.container{
+    max-width:500px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:16px;
+    color:#2E7D32;
+}
+
+.card{
+    background:#fff;
+    padding:16px;
+    border-radius:16px;
+    margin-bottom:16px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+h2{
+    margin-bottom:12px;
+}
+
+.prayer{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:10px 0;
+}
+
+input[type="checkbox"]{
+    width:22px;
+    height:22px;
+}
+
+.summary{
+    margin-top:12px;
+    font-weight:bold;
+}
+
+button{
+    margin-top:12px;
+    width:100%;
+    border:none;
+    background:#2E7D32;
+    color:white;
+    padding:12px;
+    border-radius:12px;
+    font-size:16px;
+}
+
+#streak{
+    font-size:24px;
+    text-align:center;
+    font-weight:bold;
+}
